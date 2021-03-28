@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Task</title>
+</head>
+
+<body>
+  <!-- <div id="splash">
+    <img class="logo" src="https://i.ibb.co/G5jyXN9/logo.png" alt="" />
+  </div> -->
+
+  <div class="content">
+
+    <header class="app-header">
+      <div class="container">
+        <!-- <img class="logo" src="https://i.ibb.co/G5jyXN9/logo.png" alt="" /> -->
+      <h3>Health Info</h3>
+      </div>
+    </header>
+  </div>
+
+  <div class="container-body">
+
+    <div class="parent">
+      
+      <div class="info-left">
+        <p>Blood Group:</p>
+        <p>Age:</p>
+      </div>
+
+      <div class="info-right">
+        <p>AB+</p>
+        <p>51 Years</p>
+      </div>
+    </div><hr>
+
+    <!-- Diagnosis -->
+    <div class="basic-info">
+      <h5 class=>Diagnosis</h5>
+    </div>
+    <div class="line"></div>
+    
+    <div class="parent">
+      
+      <div class="info-left">
+        <p>1. Sugar: </p>
+        <p>2. Heart Issue</p>
+        <p>3. Blood Pressure</p>
+        <p>4. Eye Signt</p>
+        <p>Diabetes</p>
+      </div>
+
+      <div class="info-right">
+        <p>Nill</p>
+        <p>Nill</p>
+        <p>Nill</p>
+        <p>Excellent</p>
+        <p>Nill</p>
+      </div>
+
+    </div><hr>
+  
+
+    <!-- Alergies -->
+    <div class="basic-info">
+      <h5 class=>Alergies</h5>
+    </div>
+    <div class="line"></div>
+
+    <div class="parent">
+      
+      <div class="info-left">
+        <p>1. Sugar: </p>
+        <p>2. Heart Issue</p>
+        <p>3. Blood Pressure</p>
+      </div>
+
+      <div class="info-right">
+        <p>Nill</p>
+        <p>Nill</p>
+        <p>Nill</p>
+      </div>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <footer class="app-footer">
+    <ul>
+      <li><a href="index.html"><i class="fa fa-user"></i></a></li>
+      <li><a href="health.html"><i class="fa fa-plus-square"></i></a></li>
+      <li><a href="flight.html"><i class="fa fa-plane"></i></a></li>
+      <li><a href="contact.html"><i class="fa fa-phone"></i></a></li>
+      <li><a href="hotel.html"><i class="fa fa-map-marker"></i></a></li>
+    </ul>
+    
+  </footer>
+
+  <script>
+    setTimeout(() => {
+    document.getElementById('splash').classList.toggle('fade');
+    }, 1000);
+  </script>
+
+  <script type="text/javascript">
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('a');
+    const menuLength = menuItem.length
+    for(let i = 0; i<menuLength; i++){
+      if(menuItem[i].href=== currentLocation){
+        menuItem[i].className = 'active'
+      }
+    }
+
+  </script>
+
+
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</html>

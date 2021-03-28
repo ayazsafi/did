@@ -1,0 +1,209 @@
+:root {
+	--primary-color: #277ce6;
+	--secondary-color: #7c0000;
+}
+.container-body {
+	display: block;
+	width: 374px;
+	height: 100%;
+	margin: auto;
+}
+
+html,
+body {
+	/* https://css-tricks.com/couple-takes-sticky-footer/ */
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto';
+	display: flex;
+	flex-direction: column;
+}
+
+/* For sticky footer - grow to fill the space */
+.content {
+	flex: 0 0 auto;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	overflow: none;
+	padding: 10px;
+}
+
+.app-header {
+	background: var(--primary-color);
+	box-shadow: 3px 3px 10px #888888;
+}
+
+.app-header .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: space-between; */
+	justify-content: center;
+	padding: 15px 10px;
+}
+
+.app-header .logo {
+	width: 170px;
+	margin: 5px;
+}
+
+.app-header h3 {
+	font-family: Montserrat;
+	color: white;
+	font-size: 20px;
+	margin-top: 3px;
+}
+
+.avatar {
+	background-image: url(avatar.jpg);
+	border: 4px solid var(--primary-color);
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+	align-items: center;
+	margin: 30px auto 0px auto;
+}
+
+.info {
+	font-family: Montserrat;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.info h3 {
+	font-weight:bold;
+	color: var(--primary-color);
+}
+
+.info p {
+	color: gray;
+}
+
+.basic-info {
+	font-family: Montserrat;
+	margin-top: 30px;
+	text-align: center;
+	color: var(--primary-color);
+}
+
+.info-left {
+	float: left;
+	width: 50%;
+	margin-right: 20px;
+	padding-left: 10px;
+}
+
+
+.parent {
+	margin: 30px auto 0px auto;
+	width: 80%;
+}
+
+.line {
+	width: 100px;
+	height: 3px;
+	background-color: var(--primary-color);
+	margin: auto;
+}
+
+.line-longer {
+	width: 150px;
+	height: 3px;
+	background-color: var(--primary-color);
+	margin: auto;
+}
+
+.contact {
+	background-color: rgb(231, 231, 231);
+	margin: 15px 25px 0px 25px;
+	text-align: center;
+	padding: 30px;
+	border-radius: 20px;
+	
+}
+
+
+
+.app-footer {
+	flex-shrink: 0;
+	background: var(--primary-color);
+	color: white;
+	padding: 20px 10px 0px 10px;
+	font-size: 14px;
+	position:fixed;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.app-footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.app-footer ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.app-footer ul li i {
+	font-size: 26px;
+}
+.app-footer ul li a {
+	color: rgb(156, 156, 156);
+}
+
+.app-footer ul li a.active {
+	color: white;
+
+}
+
+/* Splash */
+#splash {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--primary-color);
+	height: 100vh;
+	width: 100%;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#splash img {
+	width: 200px;
+}
+
+#splash.fade {
+	opacity: 0;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.grid .item img {
+		width: 60px;
+	}
+}
